@@ -143,7 +143,7 @@ font-weight: 900;
 
 .illustration-container {
     max-width: 75%;
-    background: url('file:///home/yavnika/Downloads/main_illustration.png');
+    background: url("https://hello.channeli.in/assets/main_illustration.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
