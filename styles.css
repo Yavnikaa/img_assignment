@@ -331,7 +331,7 @@ font-weight: 900;
 .why-img-illustration {
     height: 100%;
     min-height: 12.5em;
-    background: url("file:///home/yavnika/Downloads/why_img_illustration.png");
+    background: url("https://hello.channeli.in/assets/why_img_illustration.png");
     background-size: contain;
     background-repeat: no-repeat;
     background-position: center;
@@ -412,7 +412,7 @@ footer {
 .social-link {
     text-decoration: none;
     text-transform: uppercase;
-    display: flex;
+    display: flex;"
     flex-direction: column;
     justify-content: center;
     height: 20px;
@@ -424,11 +424,11 @@ footer {
     width: 0.5em;
 }
 
-.social-link img[src="file:///home/yavnika/Downloads/fb.svg"] {
+.social-link img[src="https://hello.channeli.in/assets/social_icons/fb.svg"] {
     width: 0.4em;
 }
 
-.social-link img[src="file:///home/yavnika/Downloads/website.svg"] {
+.social-link img[src="https://hello.channeli.in/assets/social_icons/website.svg"] {
     width: 0.8em;
 }
 
@@ -437,7 +437,7 @@ footer {
 .page-heading-background {
     height: 7.5em;
     background: #e7e7e7;
-    background: url('file:///home/yavnika/Downloads/banner.png');
+    background: url('https://hello.channeli.in/assets/banner.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
