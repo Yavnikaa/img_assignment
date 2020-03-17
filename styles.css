@@ -1,0 +1,674 @@
+*
+{margin: 0;
+padding: 0;
+}
+
+
+:root {
+font-size: 24px;
+font-family: Nunito Sans;
+font-style: normal;
+font-weight: normal;
+}
+
+body {
+display: flex;
+flex-direction: column;
+height: 100%;
+width: 100%;
+}
+
+main {
+flex-grow: 1;
+flex-shrink: 0;
+}
+
+nav {
+height: 1em;
+min-height: 4.5em;
+padding: auto 0;
+}
+
+.site-container {
+max-width: 1000px;
+margin: 0 auto;
+}
+
+.site-container-about {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.site-navbar-wrapper {
+height: 100%;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.site-home-link {
+display: flex;
+flex-direction: column;
+text-decoration: none;
+align-items: center;
+user-select: none;
+}
+
+.site-logo {
+display: flex;
+width: 2.25em;
+column-span: 2;
+}
+
+.site-logo-text {
+font-weight: bold;
+font-size: 0.75em;
+line-height: 1rem;
+margin-left: 2.25em;
+color: #000000;
+}
+
+.navlinks-horizontal {
+display: grid;
+grid-column-gap: 1.5em;
+grid-auto-flow: column;
+}
+
+.navlink {
+font-size: 0.5em;
+line-height: 0.67rem;
+color: #3B3736;
+text-decoration: none;
+text-transform: uppercase;
+user-select: none;
+}
+
+.navlink[selected='True'] {
+font-weight: 900;
+}
+
+.box {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    border-color:1px #e7e7e7;
+    background-color: #fff;
+    box-shadow:  10px 11px 34px -10px rgba(0,0,0,0.06);
+    padding: 0px;
+    height: 1em;
+    min-height: 3.25em;
+    z-index: 8;
+}
+
+.initial {
+    top: 0;
+    background-color: #fff;
+    z-index: 8;
+}
+
+
+
+
+
+.top: 0; {
+
+    background-color: #fff;
+    z-index: 8;
+}
+
+
+
+.home {
+    margin-top: 1.75em;
+}
+
+.main-container {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-areas: 
+    'illustration design'
+    'illustration development';
+    min-height: 25em;
+    grid-column-gap: 4em;
+}
+
+.illustration-container {
+    grid-area: illustration;
+}
+
+.design-information-container {
+    grid-area: design;
+    align-self: center;
+}
+
+.illustration-container {
+    max-width: 75%;
+    background: url('file:///home/yavnika/Downloads/main_illustration.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.main-page-heading {
+    position: relative;
+    display: inline-block;
+    font-family: 'Segoe UI';
+    font-weight:bold ;
+    font-size: 1.83em;
+    color: #3B3736;
+
+}
+
+.heading-background-box {
+    background: #F8D16C;
+    position: absolute;
+    width: 85%;
+    height: 65%;
+    left: 30%;
+    bottom: 35%;
+    z-index: 1;
+}
+
+.heading-text {
+    position: relative;
+    z-index: 2;
+}
+
+.heading-information {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 0.67em;
+    line-height: 1.1rem;
+    color: #878787;
+    margin-top: 0.7em;
+    margin-bottom: 1.25em;
+}
+
+.development-information-container {
+    grid-area: development;
+    align-self: center;
+}
+
+.timeline-heading {
+    margin-bottom: 1.5em;
+}
+
+.timeline-container {
+    margin-top: 4.8em;
+}
+
+
+.timeline-mobile{
+     display:none;
+}
+
+
+
+
+  
+  .upper-events {
+    display: grid;
+    grid-template-columns: 2fr 2fr 2fr;
+  }
+  
+  .upper-event {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lower-events {
+    display: grid;
+    grid-template-columns: 3fr 3fr;
+  }
+  
+  .lower-event {
+    display: flex;
+    align-items: center;
+  }
+  
+  .lower-event[event='1'] {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .upper-event[event='2'] {
+    display: flex;
+    justify-content: center;
+  }
+
+  .middle-line {
+    display: flex;
+    width: 100%;
+    height: 4px;
+  }
+  
+  .middle-line .mid {
+    width: 100%;
+    background: #f8d16c;
+  }
+  
+  
+  
+  .lower-event[event='3'] {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .upper-event[event='4'] {
+    display: flex;
+    justify-content: flex-end;
+  }
+  
+  .event-illustration {
+    align-self: flex-end;
+    position: relative;
+  }
+  
+  .event-illustration img {
+    position: relative;
+    left: calc(-50% + 4px);
+    width: 2.875em;
+    height: 4em;
+  }
+  
+  .event-description {
+    margin-left: -0.75em; }
+  
+  .event-heading {
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #000000;
+  }
+  
+  .event-date {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #000000;
+  }
+
+.site-cta-button {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    background: #293B52;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 2rem;
+    cursor: pointer;
+    font-size: 0.67rem;
+    user-select: none;    
+    border-radius: 2px;
+}
+
+.why-img-section {
+    margin-top: 6.5em;
+}
+
+.why-img-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-auto-flow: column;
+    grid-column-gap: 1.7em;
+}
+
+.why-img-content {
+    align-self: center;
+}
+
+.why-img-text {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 0.75em;
+    line-height: 1.1rem;
+    color: #878787;
+    margin-top: 1em;
+    margin-bottom: 1.625em;
+}
+
+.why-img-illustration {
+    height: 100%;
+    min-height: 12.5em;
+    background: url("file:///home/yavnika/Downloads/why_img_illustration.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.updates-section {
+    margin-top: 5em;
+}
+
+.updates-wrapper {
+    text-align: center;
+}
+
+.updates {
+    margin-top: 1.5em;
+    margin-bottom: 4.8em;
+}
+
+.update-item {
+    width: 75%;
+    padding: 0.75em 1.67em;
+    margin: 0 auto;
+}
+
+.update-item:nth-child(odd) {
+    background: #f7f7f7;
+}
+
+.update-item:nth-child(even) {
+    background: #ffffff;
+}
+
+.update-time {
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 0.67em;
+    line-height: 0.75rem;
+    color: #9e9e9e;
+
+}
+
+.update-text {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 0.67em;
+    line-height: 1rem;
+    color: #666666;
+    margin-top: 0.5em;
+}
+
+footer {
+    height: 1em;
+    min-height: 3.5em;
+    background: #293B52;
+    
+}
+
+.site-footer-wrapper {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.site-footer-wrapper .navlink {
+    color: #F8D16C;
+}
+
+.sociallinks {
+    display: grid;
+    grid-column-gap: 0.5em;
+    grid-auto-flow: column;
+    column-span: 2;
+    align-self: center;
+}
+
+.social-link {
+    text-decoration: none;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20px;
+    width: 20px;
+    align-self: center;
+}
+
+.social-link img {
+    width: 0.5em;
+}
+
+.social-link img[src="file:///home/yavnika/Downloads/fb.svg"] {
+    width: 0.4em;
+}
+
+.social-link img[src="file:///home/yavnika/Downloads/website.svg"] {
+    width: 0.8em;
+}
+
+/*specific for development page*/
+
+.page-heading-background {
+    height: 7.5em;
+    background: #e7e7e7;
+    background: url('file:///home/yavnika/Downloads/banner.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.page-heading {
+    position: relative;
+    display: inline-block;
+    font-family: 'Segoe UI';
+    font-weight: bold;
+    font-size: 2em;
+    color: #3B3736;
+    user-select: none;
+}
+
+.page-title{
+    position: relative;
+    display: inline-block;
+    font-family: Playfair Display;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #000000;
+    user-select: none;
+}
+
+.page-subtitle {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: .75em;
+    line-height: 1.375rem;
+    color: #878787;
+    user-select: none;
+    margin-top:2px;
+}
+
+.first-year-wrapper {
+    padding-top: 2.5em;
+}
+
+.second-year-wrapper {
+    padding-top: .83em;
+}
+
+
+
+.process-description-box {
+    background: #F7F7F7;
+    padding: 1.25em 2em;
+    margin-bottom: 2em;
+}
+
+.process-description-heading {
+    font-family: Nunito Sans;
+    font-weight: 700;
+    font-size: 1em;
+    line-height: 1.4rem;
+    color: #000000;
+    align-self: center;
+}
+
+.process-description-text {
+    font-family: Nunito Sans;
+    margin-top: 1.55em;
+    font-weight: normal;
+    font-size: 0.67em;
+    line-height: 1.1rem;
+    color: #666666;
+}
+
+.process-description-box:nth-child(1) {
+    margin-top: 1.4em;
+}
+
+.process-choice{
+    display: grid;
+}
+
+.process-choice-action-text {
+    position:relative;
+    top:2px;
+    font-family: Nunito Sans;
+    color: #000000;
+    font-size: 0.67em;
+    }
+
+
+.download-icon {
+    width: 1em;
+    vertical-align: middle;
+    margin-right: .60em;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .site-container {
+    margin:0px 18px;
+}
+    .site-container-about {
+    margin:0px 18px;
+}
+}
+
+.timeline-mobile{
+    
+    text-align: center;
+    margin:  auto;
+}
+
+.event-heading-mobile {
+    font-family: Nunito Sans;
+    font-weight: bold;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #000000;
+    text-align: center;  
+}
+
+
+
+.event-date-mobile {
+    font-family: Nunito Sans;
+    font-weight: normal;
+    font-size: 0.65rem;
+    line-height: 1rem;
+    color: #000000; 
+    text-align: center;   
+}
+
+.event-connect {
+    height: 80px;
+    width:5px;
+    background-color: #DDDDDD;
+    display:block;
+    margin: 0 auto; 
+    
+}
+.event-ongoing {
+    height:80px;
+    width:5px;
+    background: rgb(248,209,108);
+    background: linear-gradient(180deg, rgba(248,209,108,1) 0%, rgba(248,209,108,1) 60%, rgba(221,221,221,1) 60%, rgba(221,221,221,1) 100%);
+    display:block;
+    margin: 0 auto; 
+}
+.event-complete {
+    height: 80px;
+    width:5px;
+    background-color: #F8D16C;
+    display:block;
+    margin: 0 auto; 
+}
+
+@media screen and (max-width: 1208px) {
+    .illustration-container, .why-img-illustration {
+        display: none;
+    }
+    .main-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+        margin-bottom: 5em;
+    }
+    .design-information-container {
+        margin-bottom: 2em;
+    }
+    .why-img-section {
+        margin-top: 5em;
+    }
+    .why-img-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .timeline-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .updates-section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .updates-wrapper {
+        text-align: left;
+    }
+    .update-item {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 1221px) {
+    .timeline-desktop{
+        display: none;
+}
+    .timeline-mobile{
+         display:block;
+    }
+    .timeline-heading {
+        margin-bottom: 1em;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .navlinks {
+        display: none;
+    }
+    .site-footer-wrapper {
+        justify-content: space-around;
+    }
+    .sociallink img {
+        width: 0.75em;
+    }
+    .sociallink img[src="file:///home/yavnika/Downloads/fb.svg"] {
+        width: 0.5em;
+    }
+    .sociallink img[src="file:///home/yavnika/Downloads/website.svg"] {
+        width: 1em;
+    }
+    
+}
